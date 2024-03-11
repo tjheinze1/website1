@@ -1,10 +1,7 @@
-* {
-    box-sizing: border-box;
-}
 
 
 body {
-    background-color: grey;
+    background-color: Mocha;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -12,56 +9,15 @@ body {
     margin: 0;
 }
 
-
 .search {
-    height: 50px;
+    height: 200px;
+    width: 200 px;
+    background-color: cream;
     position: relative;
 }
 
-
-.search .btn {
+.search .btn{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 24px;
-    background-color: white;
-    border: 0;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    top: 0;
+    right: 0;
 }
-
-
-.search .input {
-    background-color: white;
-    borderL: 0;
-    font-size: 18px;
-    height: 50px;
-    width: 50px;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: width 0.3s ease;
-}
-
-
-.search .input:focus {
-    outline: none;
-}
-
-
-.search.active .input {
-    width: 200px;
-}
-
-
-
-
-.search.active .btn {
-    transform: translateX(198px)
-}
-
-
-btn=document.querySelector('.btn') search=document.querySelector('.search') btn.addEventListener('click', ()=> {
-        search.classList.toggle('active')
-    })
